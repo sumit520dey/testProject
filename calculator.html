@@ -1,0 +1,132 @@
+﻿
+
+<!DOCTYPE html>
+<title>
+CALCULATOR
+</title>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<link rel="stylesheet" type="text/css" href="cal.css">
+
+<H1 class="solid"><center>Cal</center></H1>
+
+<p class="text"> </p>
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="row">
+<div class="col" >
+<center>
+<input type="text" id="Display" placeholder="0" disabled="true" class="form-control">
+</center>
+</div>
+</div>
+
+<div class="button-margin">
+	<div style="width: auto;">
+<input type="button" class="button1" name="backspace" value="◄" onclick="sign(value)">
+<input type="button" class="button1" name="divide" value="÷" onclick="sign(value)">
+<input type="button" class="button1" name="multiply" value="x"onclick="sign(value)">
+<input type="button" class="button1" name="minus" value="-" onclick="sign(value)">
+
+
+<br>
+<br>
+<br>
+<br>
+
+<input type="button" class="button" name="No7" value="7" onclick="show(value)">
+<input type="button" class="button" name="No8" value="8" onclick="show(value)">
+<input type="button" class="button" name="No9" value="9" onclick="show(value)">
+<input type="button" class="button" name="sum" value="+" onclick="sign(value)">
+<br>
+<br>
+<br>
+<br>
+
+<input type="button" class="button" name="No4" value="4" onclick="show(value)">
+<input type="button" class="button" name="No5" value="5" onclick="show(value)">
+<input type="button" class="button" name="No6" value="6" onclick="show(value)">
+<input type="button" class="button" name="square_root" value="√" onclick="sign(value)">
+
+
+<br>
+<br>
+<br>
+<br>
+
+<input type="button" class="button" name="No1" value="1" onclick="show(value)">
+<input type="button" class="button" name="No2" value="2" onclick="show(value)">
+<input type="button" class="button" name="No3" value="3" onclick="show(value)">
+<input type="button" class="button" name="square" value="x²" onclick="operation(value)">
+<br>
+<br>
+<br>
+<br>
+
+<input type="button" class="button" name="C" value="C" onclick="show('c')">
+<input type="button" class="button" name="0" value="0" onclick="show(value)">
+<input type="button" class="button" name="dot" value="." onclick="show(value)">
+<input type="button" class="button" name="equals" value="=" onclick="sign(value)">
+</div>
+</div>
+</div>
+<!--
+	
+<script>
+
+	var firstOpr = 0;
+	function show(eValue) {
+  var x = document.getElementsByTagName("button");
+  if(document.getElementById("Display").value !=null)
+  {
+  	document.getElementById("Display").value+=eValue;	
+  }
+  else
+  	document.getElementById("Display").value = eValue;
+}
+
+function sign(eValue){
+	if(!document.getElementById("Display").value.includes('+'))
+	{
+	let displayText="";
+	displayText=document.getElementById("Display").value;
+	firstOpr=displayText;
+	document.getElementById("Display").value = displayText + eValue;
+
+	
+}
+else if (eValue === "=")
+{
+
+}
+}
+</script>
+-->
+<script type="text/javascript" src="fun.js">
+
+
+
+
+
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+
+
+</html>
