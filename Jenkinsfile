@@ -11,7 +11,7 @@ def createMyStandardDeclarativePipeline(Map templateParams) {
                 steps {
                     script {
                         echo "Execute our code from here " 
-			chmod +x build1.sh
+			chmod 777 build1.sh
 			sh build1.sh
                     }
                 }
@@ -20,7 +20,7 @@ def createMyStandardDeclarativePipeline(Map templateParams) {
                 steps {
                     script {
                         echo "Execution completed " 
-			chmod +x test.sh
+			chmod 777 test.sh
 			sh test.sh
                     }
                 }
