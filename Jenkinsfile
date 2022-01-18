@@ -8,7 +8,7 @@ pipeline {
 		echo "Execute our code from here "
 		ls -lrt
 		pwd
-		#chmod 777 build1.sh
+		//chmod 777 build1.sh
 		sh build1.sh
             }
         }
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo 'Testing..'
 		echo "Execution completed "
-		#chmod 777 test.sh
+		//chmod 777 test.sh
 		sh test.sh
             }
         }
